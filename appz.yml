@@ -16,6 +16,13 @@ deploy:
     replicas: 1
     port:
     - 9093
+    nodeSelector:
+      nodepool: cloudorbit
+    tolerations:
+      - key: nodepool
+        operator: Equal
+        value: cloudorbit
+        effect: NoSchedule
 
 volumes:
   - claim: alertmanager-data
