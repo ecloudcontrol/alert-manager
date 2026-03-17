@@ -34,5 +34,5 @@ properties:
     CHANNEL_1: appz-delivery 
     CHANNEL_2: tradeideas-alerts
     SLACK_CHANNEL: notification-openebs
-    CLUSTER_NAME: Trade-Ideas-PRE-PROD
+    CLUSTER_NAME_1: Trade-Ideas-PRE-PROD
     revision : 2
