@@ -35,4 +35,4 @@ properties:
     CHANNEL_2: tradeideas-alerts
     SLACK_CHANNEL: notification-openebs
     CLUSTER_NAME_1: Trade-Ideas-PROD
-    revision : 9
+    revision : 10
