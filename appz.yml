@@ -1,14 +1,14 @@
 app:
     name: alertmanager
     code: alertmanager
-    notify: appz@ecloudcontrol.com
+    notify: kullas@maximaconsulting.com
 
 build:
-    version: 0.20
-    env: PROD
+    version: 0.27
+    env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: alertmanager-0.20
+    image_template: alertmanager-0.27
 
 deploy:
     context: alpha/PROD
@@ -16,6 +16,13 @@ deploy:
     replicas: 1
     port:
     - 9093
+    nodeSelector:
+      nodepool: clickhouse
+    tolerations:
+      - key: nodepool
+        operator: Equal
+        value: clickhouse
+        effect: NoSchedule
 
 volumes:
   - claim: alertmanager-data
