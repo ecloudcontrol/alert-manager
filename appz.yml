@@ -19,6 +19,7 @@ deploy:
     tolerations:
       - key: nodepool
         operator: Exists
+        effect: NoSchedule
 
 volumes:
   - claim: alertmanager-data
