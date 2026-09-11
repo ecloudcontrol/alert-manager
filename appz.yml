@@ -38,6 +38,6 @@ properties:
     SLACK_CHANNEL: appz-delivery
     SLACK_VV_ALERT_API_URL:
        vault: SLACK_VV_ALERT_API_URL
-    SLACK_VV_ALERT_CHANNEL: vv-alert   
+    SLACK_VV_ALERT_CHANNEL: viralvue-alerts  
     CLUSTER_NAME: VV-PROD-CloudOrbit
     revision : 1
