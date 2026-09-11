@@ -40,4 +40,4 @@ properties:
        vault: SLACK_VV_ALERT_API_URL
     SLACK_VV_ALERT_CHANNEL: viralvue-alerts  
     CLUSTER_NAME: VV-PROD-CloudOrbit
-    revision : 4
+    revision : 5
