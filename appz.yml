@@ -37,4 +37,4 @@ properties:
       vault: SLACK_API_URL
     SLACK_CHANNEL: appz-delivery
     CLUSTER_NAME: VV-DEV
-    revision : 6
+    revision : 7
