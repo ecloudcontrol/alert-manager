@@ -4,22 +4,19 @@ app:
     notify: appz@ecloudcontrol.com
 
 build:
-    version: 0.27
-    env: PROD
+    version: 0.28
+    env: DEV1
     build_file: none
     output_files: output/*.zip
     image_template: alertmanager-0.28
 
 deploy:
-    context: alpha/PROD
+    context: alpha/DEV1
     type: statefulset
     replicas: 1
     port:
     - 9093
-    tolerations:
-      - key: nodepool
-        operator: Exists
-        effect: NoSchedule
+
 
 volumes:
   - claim: alertmanager-data
@@ -36,7 +33,6 @@ properties:
     SLACK_API_URL_TWO:
       vault: SLACK_API_URL_TWO
     CHANNEL_1: appz-delivery 
-    CHANNEL_2: tradeideas-alerts
+    CHANNEL_2: plantmaster-alerts
     SLACK_CHANNEL: notification-openebs
-    CLUSTER_NAME_1: Trade-Ideas-PROD
     revision : 12
