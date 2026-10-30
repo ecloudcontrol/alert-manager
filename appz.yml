@@ -35,4 +35,5 @@ properties:
     CHANNEL_1: appz-delivery 
     CHANNEL_2: plantmaster-alerts
     SLACK_CHANNEL: notification-openebs
+    
     revision : 13
